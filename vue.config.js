@@ -1,7 +1,7 @@
 const webpack = require('webpack');
 
 module.exports = {
-  baseUrl: '/print/',
+  baseUrl: process.env.OSS_URL ? process.env.OSS_URL : '/print/',
   lintOnSave: false,
   devServer: {
     port: 3007,
