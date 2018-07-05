@@ -32,7 +32,7 @@ export default new Router({
         return {
           type: route.params.type,
           taskId: route.params.taskId,
-          printList: pl.split('_').filter(item => PrintList.includes(item)),
+          printList: pl.split('_').filter(item => PrintList.includes(item)), // 用 '_' 隔开之后，再过滤一下
         };
       },
       beforeEnter: (to, from, next) => {
