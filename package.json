@@ -22,6 +22,7 @@
     "@vue/eslint-config-airbnb": "^3.0.0-rc.3",
     "lint-staged": "^6.0.0",
     "node-sass": "^4.9.0",
+    "rishiqing-deploy": "^1.0.4",
     "sass-loader": "^7.0.1",
     "vue-template-compiler": "^2.5.16"
   },
