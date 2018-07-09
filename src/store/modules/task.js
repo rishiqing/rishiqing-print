@@ -2,7 +2,7 @@
 * @Author: qinyang
 * @Date:   2018-07-04 19:06:55
 * @Last Modified by:   qinyang
-* @Last Modified time: 2018-07-05 03:48:57
+* @Last Modified time: 2018-07-09 12:42:09
 */
 import {
   getKanBanItem,
@@ -63,6 +63,7 @@ export default {
     },
     fromString({ from }) {
       const list = [];
+      if (!from) return '';
       if (from.kanbanName) list.push(from.kanbanName);
       if (from.kanbanChildName) list.push(from.kanbanChildName);
       if (from.kanbanCardName) list.push(from.kanbanCardName);
