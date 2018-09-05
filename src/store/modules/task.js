@@ -2,7 +2,7 @@
 * @Author: qinyang
 * @Date:   2018-07-04 19:06:55
 * @Last Modified by:   qinyang
-* @Last Modified time: 2018-07-09 12:42:09
+* @Last Modified time: 2018-09-05 12:11:05
 */
 import {
   getKanBanItem,
@@ -59,6 +59,9 @@ export default {
         `).join('')}</ul>`;
     },
     dateString(state) {
+      if (!state.startDate || !state.endDate) {
+        return '';
+      }
       return `${state.startDate} - ${state.endDate}`;
     },
     fromString({ from }) {
