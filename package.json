@@ -6,7 +6,8 @@
     "serve": "vue-cli-service serve",
     "build-beta": "vue-cli-service build --mode beta",
     "build-release": "vue-cli-service build --mode release",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "deploy": "rishiqing-deploy --config='.rishiqing-deploy.yml'"
   },
   "dependencies": {
     "axios": "^0.18.0",
@@ -22,6 +23,7 @@
     "@vue/eslint-config-airbnb": "^3.0.0-rc.3",
     "lint-staged": "^6.0.0",
     "node-sass": "^4.9.0",
+    "rishiqing-deploy": "^1.0.4",
     "sass-loader": "^7.0.1",
     "vue-template-compiler": "^2.5.16"
   },
