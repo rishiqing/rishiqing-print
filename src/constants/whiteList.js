@@ -9,7 +9,7 @@ export default {
   tags: [
     'br', 'span', 'a', 'img', 'b', 'strong', 'i', 'strike',
     'u', 'font', 'p', 'ul', 'ol', 'li', 'blockquote', 'pre', 'code', 'h1',
-    'h2', 'h3', 'h4', 'hr', 'inherit', 'table', 'colgroup', 'col', 'thead',
+    'h2', 'h3', 'h4', 'h5', 'h6', 'hr', 'inherit', 'table', 'colgroup', 'col', 'thead',
     'tbody', 'th', 'tr', 'td', 'input',
   ],
   attributes: {
