@@ -67,10 +67,17 @@ export default {
     fromString({ from }) {
       const list = [];
       if (!from) return '';
-      if (from.kanbanName) list.push(from.kanbanName);
-      if (from.kanbanChildName) list.push(from.kanbanChildName);
-      if (from.kanbanCardName) list.push(from.kanbanCardName);
-      return list.join('-');
+      // 如果是子任务，任务来源只用放前面有哪些任务
+      if (from.type === 'subtask') {
+        if (from.attach && from.attach.length) {
+          from.attach.forEach(o => list.push(o.name));
+        }
+      } else {
+        if (from.kanbanName) list.push(from.kanbanName);
+        if (from.kanbanChildName) list.push(from.kanbanChildName);
+        if (from.kanbanCardName) list.push(from.kanbanCardName);
+      }
+      return list.join(' > ');
     },
   },
   actions: {
