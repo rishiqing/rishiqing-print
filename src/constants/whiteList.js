@@ -10,7 +10,7 @@ export default {
     'br', 'span', 'a', 'img', 'b', 'strong', 'i', 'strike',
     'u', 'font', 'p', 'ul', 'ol', 'li', 'blockquote', 'pre', 'code', 'h1',
     'h2', 'h3', 'h4', 'h5', 'h6', 'hr', 'inherit', 'table', 'colgroup', 'col', 'thead',
-    'tbody', 'th', 'tr', 'td', 'input',
+    'tbody', 'th', 'tr', 'td', 'input', 'svg', 'em', 's', 'path',
   ],
   attributes: {
     img: [
@@ -25,7 +25,7 @@ export default {
       'class', 'data-unique-id', 'data-file-id',
       'data-file-name', 'data-file-src', 'data-attach',
       'data-img', 'data-global-link', 'data-setting',
-      'data-task-block', 'data-map',
+      'data-task-block', 'data-map', 'data-icon-type',
     ],
     span: [
       'class', 'contenteditable', 'data-name',
@@ -35,9 +35,26 @@ export default {
       'data-attach-type',
     ],
     col: ['width'],
-    div: ['class'],
+    div: [
+      'class',
+      'spellcheck',
+      'data-status',
+      'data-block-type',
+    ],
     input: [
       'class', 'type', 'value', 'disabled', 'data-user-id',
+    ],
+    svg: [
+      'width', 'height', 'viewbox',
+    ],
+    path: [
+      'd', 'fill',
+    ],
+    ul: [
+      'data-checked',
+    ],
+    li: [
+      'class',
     ],
   },
   styles: {

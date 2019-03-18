@@ -5,5 +5,5 @@
 * @Last Modified time: 2018-07-04 16:03:54
 */
 export default {
-  DOC_ITEM: '/v1/corpus/summary',
+  DOC_ITEM: '/v1/corpus/summary/printDetail',
 };

@@ -21,7 +21,7 @@
     </div>
     <div class="content">
       <div class="info-area">{{ info }}</div>
-      <div class="body-area editor-style" v-html="xss(note)"></div>
+      <div class="body-area reditorStyle ql-editor" v-html="xss(note)"></div>
     </div>
   </div>
 </template>
